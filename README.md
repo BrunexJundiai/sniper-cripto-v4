@@ -1,6 +1,6 @@
-# 🚀 Sniper Cripto V4.0 - Autonomous Quantitative Intelligence
+# 🚀 Sniper Cripto V4.1 - Autonomous Quantitative Intelligence & PnL
 
-Sistema avançado de monitoramento e execução de trading quantitativo para o mercado de criptomoedas. Utiliza arquitetura multi-agentes de IA (LangGraph), Processamento de Linguagem Natural ultra-rápido (Groq/Llama 3.3), RAG (Retrieval-Augmented Generation) para leitura de notícias em tempo real e execução algorítmica via CCXT na Binance.
+Sistema avançado de monitoramento e execução de trading quantitativo para o mercado de criptomoedas, desenhado para arquiteturas de *Family Office*. Utiliza orquestração multi-agentes de IA (LangGraph), Processamento de Linguagem Natural ultra-rápido (Groq/Llama 3.3), RAG para leitura de notícias em tempo real e execução algorítmica via CCXT na Binance, com gestão de risco e PnL (Lucro/Prejuízo) automatizados.
 
 ## 🛠️ Stack Tecnológica
 
@@ -9,38 +9,46 @@ Sistema avançado de monitoramento e execução de trading quantitativo para o m
 | **Linguagem & Core** | ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white) |
 | **Inteligência Artificial** | ![LangChain](https://img.shields.io/badge/LangGraph-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white) ![Groq](https://img.shields.io/badge/Groq-f55036?style=for-the-badge&logo=groq&logoColor=white) |
 | **Mercado & Notícias (RAG)** | ![Binance](https://img.shields.io/badge/Binance-F3BA2F?style=for-the-badge&logo=binance&logoColor=black) ![CCXT](https://img.shields.io/badge/CCXT-4db33d?style=for-the-badge&logo=bitcoin&logoColor=white) ![RSS](https://img.shields.io/badge/RSS_Feed-FFA500?style=for-the-badge&logo=rss&logoColor=white) |
-| **Interface & Bot** | ![Telegram](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white) |
-| **Análise de Dados** | ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white) ![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white) |
+| **Interface & DataViz** | ![Telegram](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white) ![Matplotlib](https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black) |
 
-## 🧠 Arquitetura de Agentes (Human-in-the-Loop)
-O sistema utiliza **LangGraph** para orquestrar um fluxo de decisão em que agentes especializados colaboram. O diferencial é a trava de segurança humana: a IA propõe com base em matemática fria e notícias globais, mas o gestor dispõe.
+## 🧠 Arquitetura de Agentes e Consciência de Bolso (PnL)
+O sistema utiliza **LangGraph** para orquestrar um fluxo de decisão com uma inteligência patrimonial única. Os agentes consultam a blockchain/exchange em tempo real para descobrir o **Preço Médio Exato** do usuário. A IA propõe estratégias não apenas baseadas em matemática fria, mas no **Lucro/Prejuízo real da carteira**, recomendando ações de *Take Profit* (Realização de Lucros) em momentos estratégicos.
 
 ![Código dos Agentes](img/agentesIA.png)
 
-## 📱 Fluxo de Operação e Tomada de Decisão
+## 📱 Fluxo de Swing Trade e Tomada de Decisão (Giro Rápido)
 
-O ecossistema garante total transparência em cada etapa do trade. Abaixo, o fluxo completo desde o monitoramento até a liquidação:
+O ecossistema é otimizado para capturar volatilidade de curto prazo **(Gatilhos de 3%)**, garantindo total autonomia. A IA aconselha com base no RSI, MACD e Notícias, mas o gestor humano possui um painel de controle absoluto para realizar lucros ou aportar a qualquer momento.
 
-| 1. Gatilho (Volatilidade) | 2. Dossiê IA | 3. Validação Humana | 4. Execução Binance |
-| :---: | :---: | :---: | :---: |
-| ![Gatilho](img/gatilho.png) | ![Dossiê](img/conselho1.png) | ![Escolha](img/conselho2_escolha.png) | ![Execução](img/execucao.png) |
+| 1. Dossiê Executivo (PnL) | 2. Painel Autônomo de Giro |
+| :---: | :---: |
+| ![Dossiê](img/conselho1.png) | ![Escolha](img/conselho2_escolha.png) |
 
-> **Governança:** Na etapa 3, os botões interativos permitem que o usuário aprove ou recuse a operação baseando-se no parecer quantitativo (MACD, Bollinger, RSI) e fundamentalista (Notícias), definindo o valor exato do aporte no ato.
+> **Governança Ativa:** Os botões interativos permitem que o usuário ignore ou acate o "Veredito" da IA, decidindo raspar os lucros de uma operação (Vender) ou fechar a análise imediatamente.
 
-## 🖥️ Logs de Monitoramento 360º
-O robô mantém vigilância constante (Dockerized com `PYTHONUNBUFFERED=1` para logs em tempo real) com varreduras proativas e blindadas anti-crash a cada 15 minutos em todos os ativos da carteira.
+## 📊 Master Dashboard Institucional (Automático)
+O robô mantém vigilância constante em duas frentes simultâneas:
+1. **Loop Proativo (15 min):** Varredura caçando oportunidades sensíveis de *Swing Trade* (3%).
+2. **Boletim Executivo (30 min):** O robô gera um DRE tático e desenha, de forma autônoma na memória, um **Gráfico Treemap em PDF**, enviado diretamente via Telegram, consolidando a alocação global em degradê de volume financeiro.
 
-| Operação via VS Code Terminal | Monitoramento de Contêineres |
+| Extrato Financeiro Consolidado | Treemap de Alocação (PDF Gerado em Python) |
+| :---: | :---: |
+| ![Relatório Texto](img/relatorio_cripto.png) | ![Treemap](img/relatorio_cripto2.png) |
+
+## 🖥️ Monitoramento 360º (Docker)
+Infraestrutura conteinerizada (`PYTHONUNBUFFERED=1`) com blindagem anti-crash.
+
+| Operação via Terminal (VS Code) | Status dos Contêineres |
 | :--- | :--- |
 | ![Logs VS Code](img/log_vscode.png) | ![Docker Status](img/docker.png) |
 
 ---
 
-## 📈 Roadmap de Evolução (Próximos Passos)
+## 📈 Roadmap de Evolução (Concluído)
 
-- [ ] **Comando de Consulta Rápida (`/carteira`):** Dashboard instantâneo para cálculo de PnL (Lucro/Prejuízo) em tempo real de todos os ativos da Binance via Telegram.
-- [ ] **Integração Global (Master Dashboard V3 + V4):** Unificação dos dados de Renda Variável (B3) e Criptoativos em um único DRE automatizado no Google Sheets, consolidando o patrimônio total da família.
-- [ ] **Relatórios Mensais em PDF:** Automação de balanço de performance enviado diretamente pelo bot.
+- [x] **Comando de Consulta Rápida:** Dashboard instantâneo para cálculo de PnL (Lucro/Prejuízo) em tempo real de todos os ativos da Binance via Telegram.
+- [x] **Integração Global (Master Dashboard V4.1):** Unificação dos dados com a criação de gráficos Treemap automatizados, consolidando o patrimônio total e níveis de risco.
+- [x] **Relatórios em PDF Institucionais:** Automação de balanço de performance (Matplotlib/Squarify) enviado diretamente pelo bot a cada 30 minutos.
 
 ---
 **Desenvolvido por Bruno Felipe de Almeida** *Especialista em BI & Analytics (USP) | Engenheiro de Dados* [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/bruno-felipe-de-almeida/)
