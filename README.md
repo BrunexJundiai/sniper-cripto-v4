@@ -26,14 +26,24 @@ O ecossistema é otimizado para capturar volatilidade de curto prazo **(Gatilhos
 
 > **Governança Ativa:** Os botões interativos permitem que o usuário ignore ou acate o "Veredito" da IA, decidindo raspar os lucros de uma operação (Vender) ou fechar a análise imediatamente.
 
-## 📊 Master Dashboard Institucional (Automático)
+## 📊 Master Dashboard Institucional e Deep Dive (Automático)
 O robô mantém vigilância constante em duas frentes simultâneas:
 1. **Loop Proativo (15 min):** Varredura caçando oportunidades sensíveis de *Swing Trade* (3%).
-2. **Boletim Executivo (30 min):** O robô gera um DRE tático e desenha, de forma autônoma na memória, um **Gráfico Treemap em PDF**, enviado diretamente via Telegram, consolidando a alocação global em degradê de volume financeiro.
+2. **Boletim Executivo (30 min):** O robô gera um **Relatório PDF Multi-page** autônomo, enviado via Telegram, contendo o Treemap de alocação, DRE Analítico ordenado por lucro real e o Deep Dive técnico das Top moedas.
 
-| Extrato Financeiro Consolidado | Treemap de Alocação (PDF Gerado em Python) |
+### 1. Visão Global e DRE Analítico
+Consolidação da alocação global em degradê de volume financeiro e status de posições com formatação condicional baseada no PnL Real.
+
+| Mapa de Alocação (Treemap) | DRE Dinâmico (Ordenado por Lucro) |
 | :---: | :---: |
-| ![Relatório Texto](img/relatorio_cripto.png) | ![Treemap](img/relatorio_cripto2.png) |
+| ![Treemap](img/relatorio_cripto2.png) | ![DRE](img/DRE_cripto.png) |
+
+### 2. Deep Dive Técnico (Top Performers)
+Geração de lâminas detalhadas para os ativos com melhor performance na carteira, destacando Ação de Preço, cruzamento de PM, MACD, RSI e **Regressão Linear Preditiva (30 dias)** em evidência.
+
+| Ação de Preço e Regressão Linear | Indicadores Técnicos (MACD / RSI) |
+| :---: | :---: |
+| ![Preço e Regressão](img/top_performance_1.png) | ![Indicadores](img/top_performance_2.png) |
 
 ## 🖥️ Monitoramento 360º (Docker)
 Infraestrutura conteinerizada (`PYTHONUNBUFFERED=1`) com blindagem anti-crash.
@@ -47,8 +57,8 @@ Infraestrutura conteinerizada (`PYTHONUNBUFFERED=1`) com blindagem anti-crash.
 ## 📈 Roadmap de Evolução (Concluído)
 
 - [x] **Comando de Consulta Rápida:** Dashboard instantâneo para cálculo de PnL (Lucro/Prejuízo) em tempo real de todos os ativos da Binance via Telegram.
-- [x] **Integração Global (Master Dashboard V4.1):** Unificação dos dados com a criação de gráficos Treemap automatizados, consolidando o patrimônio total e níveis de risco.
-- [x] **Relatórios em PDF Institucionais:** Automação de balanço de performance (Matplotlib/Squarify) enviado diretamente pelo bot a cada 30 minutos.
+- [x] **Integração Global (Master Dashboard V4.1):** Unificação dos dados com a criação de gráficos automáticos Multi-page em PDF.
+- [x] **DRE Dinâmico e Viés Preditivo:** Implementação de regressão linear para 30 dias com cone de projeção e ordenação de ativos por maior lucro líquido em Reais.
 
 ---
 **Desenvolvido por Bruno Felipe de Almeida** *Especialista em BI & Analytics (USP) | Engenheiro de Dados* [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/bruno-felipe-de-almeida/)
