@@ -6,7 +6,8 @@ Sistema avançado de monitoramento e execução de trading quantitativo para o m
 
 | Categoria | Tecnologias e Frameworks |
 | :--- | :--- |
-| **Linguagem & Core** | ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white) |
+| **Linguagem & Core** | ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) |
+| **Infra & Cloud** | ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white) ![Oracle Cloud](https://img.shields.io/badge/Oracle_Cloud-F80000?style=for-the-badge&logo=oracle&logoColor=white) ![Ubuntu](https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white) |
 | **Inteligência Artificial** | ![LangChain](https://img.shields.io/badge/LangGraph-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white) ![Groq](https://img.shields.io/badge/Groq-f55036?style=for-the-badge&logo=groq&logoColor=white) |
 | **Mercado & Notícias (RAG)** | ![Binance](https://img.shields.io/badge/Binance-F3BA2F?style=for-the-badge&logo=binance&logoColor=black) ![CCXT](https://img.shields.io/badge/CCXT-4db33d?style=for-the-badge&logo=bitcoin&logoColor=white) ![RSS](https://img.shields.io/badge/RSS_Feed-FFA500?style=for-the-badge&logo=rss&logoColor=white) |
 | **Interface & DataViz** | ![Telegram](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white) ![Matplotlib](https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black) |
@@ -52,12 +53,12 @@ Geração de lâminas detalhadas para os ativos com melhor performance na cartei
 | :---: |
 | ![Gráfico Dólar](img/exemplo_dolar_grafico.jpeg) |
 
-## 🖥️ Monitoramento 360º (Docker)
-Infraestrutura conteinerizada (`PYTHONUNBUFFERED=1`) com blindagem anti-crash.
+## ☁️ Monitoramento 360º & Infraestrutura em Nuvem
+Infraestrutura conteinerizada (`PYTHONUNBUFFERED=1`) com blindagem anti-crash, deployada em um servidor Linux de alta disponibilidade operando 24/7.
 
-| Operação via Terminal (VS Code) | Status dos Contêineres |
+| Logs do Servidor (Deploy Nuvem) | Status dos Contêineres |
 | :--- | :--- |
-| ![Logs VS Code](img/log_vscode.png) | ![Docker Status](img/docker.png) |
+| ![Logs Oracle Cloud](img/infra_oracle.png) | ![Docker Status](img/docker.png) |
 
 ---
 
@@ -67,6 +68,7 @@ Infraestrutura conteinerizada (`PYTHONUNBUFFERED=1`) com blindagem anti-crash.
 - [x] **Integração Global (Master Dashboard V4.1):** Unificação dos dados com a criação de gráficos automáticos Multi-page em PDF.
 - [x] **DRE Dinâmico e Viés Preditivo:** Implementação de regressão linear para 30 dias com cone de projeção e ordenação de ativos.
 - [x] **Exposição Cambial (Caixa Multi-Moeda):** Rastreio autônomo do saldo em carteira (BRL e USDT) integrados à visualização do Treemap de alocação.
+- [x] **Migração Cloud 24/7:** Deploy do ecossistema Dockerizado em instância Oracle Cloud (Always Free) para execução ininterrupta e redução de latência.
 
 ---
 [![Acesso Rápido](https://img.shields.io/badge/Acesso_Rápido-Repositório_GitHub-181717?style=for-the-badge&logo=github)](https://github.com/BrunexJundiai/sniper-cripto-v4)
